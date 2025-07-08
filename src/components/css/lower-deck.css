@@ -84,7 +84,7 @@ textarea:focus {
   background: #2563eb;
 }
 
-/* Mobile friendly */
+
 @media (max-width: 768px) {
   .contact-container {
     flex-direction: column;

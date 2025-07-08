@@ -1,5 +1,5 @@
 import React from "react";
-import './upper-deck.css';
+import './css/upper-deck.css';
 
 function UpperDeck() {
   return (
@@ -11,20 +11,19 @@ function UpperDeck() {
             I'm <span className="highlight">EL-dog</span>
           </h1>
           <p className="role">A fellow <span className="typed">Programmer</span></p>
-          <button className="cta">About Me →</button>
+         
           <div className="social-icons">
-            <a href="#"><i className="fab fa-linkedin"></i></a>
-            <a href="#"><i className="fab fa-github"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-telegram"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/sahil-ojha-9844a6156/"><i className="fab fa-linkedin"></i></a>
+            <a href="https://github.com/EL-dog"><i className="fab fa-github"></i></a>
+            <a href="https://medium.com/@ojhasahil9"><i className="fab fa-medium"></i></a>
+     
           </div>
         </div>
         <div className="right-section">
-          <img src="/avatar.png" alt="el-dog avatar" className="avatar" />
+          <img src={require("./cleveland.png")} alt="Profile" className="profile-image" />
         </div>
       </div>
-      {/* Optional: background grid effect */}
+
       <div className="background-overlay"></div>
     </div>
   );

@@ -1,11 +1,10 @@
-/* Remove padding/margin everywhere */
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* Fullscreen hero container */
 .upper-deck {
   position: relative;
   width: 100vw;
@@ -18,7 +17,7 @@
   overflow: hidden;
 }
 
-/* Inner flex layout, no container padding */
+
 .upper-deck-content {
   display: flex;
   justify-content: space-between;
@@ -26,7 +25,7 @@
   width: 100%;
   max-width: 1200px;
   z-index: 2;
-  padding: 0 2rem; /* Optional: remove this if you want *literally* edge to edge */
+  padding: 0 2rem; 
 }
 
 .left-section {
@@ -105,7 +104,7 @@
   box-shadow: 0 8px 20px rgba(0,0,0,0.1);
 }
 
-/* Optional background grid */
+
 .background-overlay {
   position: absolute;
   top: 0;
@@ -117,7 +116,7 @@
   z-index: 0;
 }
 
-/* Responsive layout */
+
 @media (max-width: 768px) {
   .upper-deck-content {
     flex-direction: column;

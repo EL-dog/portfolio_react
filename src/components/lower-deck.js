@@ -1,26 +1,25 @@
 import React from "react";
-import "./lower-deck.css";
+import "./css/lower-deck.css";
 
 export default function LowerDeck() {
   return (
     <div className="contact-section">
       <div className="contact-container">
-        {/* 📍 Left: Contact Details */}
+        
         <div className="contact-info">
           <h2>Let's Connect</h2>
           <p>If you have a project or opportunity in mind, I’d love to hear from you.</p>
           <div className="contact-detail">
-            <strong>Email:</strong> <a href="mailto:eldog@example.com">eldog@example.com</a>
+            <strong>Email:</strong> <a href="mailto:ojhasahil9@gmail.com">ojhasahil9@gmail.com</a>
           </div>
           <div className="contact-detail">
-            <strong>Phone:</strong> <a href="tel:+919876543210">+91 98765 43210</a>
+            <strong>Phone:</strong> <a href="tel:+917992152704">+91 79921 52704</a>
           </div>
           <div className="contact-detail">
             <strong>Location:</strong> Bangalore, India (Remote Available)
           </div>
         </div>
 
-        {/* ✍️ Right: Contact Form */}
         <div className="contact-form">
           <form onSubmit={(e) => e.preventDefault()}>
             <div className="form-group">

@@ -1,0 +1,18 @@
+.typing-output {
+  font-family: 'Courier New', Courier, monospace;
+  font-size: 1.5rem;
+  color: #1e293b;
+  white-space: normal;   
+  word-break: break-word;
+}
+
+
+.blinking-cursor {
+  font-weight: bold;
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0; }
+}

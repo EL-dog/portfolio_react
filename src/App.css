@@ -1,4 +1,4 @@
-/* Reset and base styles */
+
 * {
   margin: 0;
   padding: 0;
@@ -9,9 +9,9 @@
   font-family: Arial, sans-serif;
 }
 
-/* Persistent Navbar */
+
 .navbar {
-  position: relative;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
@@ -59,9 +59,10 @@
   font-weight: bold;
 }
 
-/* Views Container */
+
 .views-container {
-  margin-top: 70px; /* Account for fixed navbar */
+  margin-top: 70px; 
+  background-color: #fff;
 }
 
 .view {
