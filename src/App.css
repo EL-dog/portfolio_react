@@ -1,38 +1,98 @@
-.App {
-  text-align: center;
+/* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.app {
+  font-family: Arial, sans-serif;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+/* Persistent Navbar */
+.navbar {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
   background-color: #282c34;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: left;
+  padding: 1rem 2rem;
+  z-index: 1000;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.5rem;
+}
+
+.nav-item {
+  cursor: pointer;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-item:hover {
+  background-color: #3d434f;
+}
+
+.nav-item.active {
+  background-color: #61dafb;
+  color: #282c34;
+}
+
+.scroll-counter {
+  background-color: #61dafb;
+  color: #282c34;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  font-weight: bold;
+}
+
+/* Views Container */
+.views-container {
+  margin-top: 70px; /* Account for fixed navbar */
+}
+
+.view {
   min-height: 100vh;
+  padding: 2rem;
   display: flex;
   flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: center;
+  transition: background-color 0.5s;
 }
 
-.App-link {
-  color: #61dafb;
+.view:nth-child(odd) {
+  background-color: #f0f2f5;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.view:nth-child(even) {
+  background-color: #ffffff;
 }
+
+.view.active-view {
+  background-color: #e1f5fe;
+}
+
+.view h2 {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.view p {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+}
+
